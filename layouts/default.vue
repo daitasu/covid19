@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    公開までの間、ただいま準備中です,今しばらくお待ち下さい。
+    公開までの間、ただいま準備中です。今しばらくお待ち下さい。
     <!--div class="d-sm-flex">
       <SideNavigation
         @openNavi="showNavi"

@@ -1,6 +1,7 @@
 <template>
   <v-app class="app">
-    <div class="d-sm-flex">
+    Under construction
+    <!--div class="d-sm-flex">
       <SideNavigation
         @openNavi="showNavi"
         @closeNavi="hideNavi"
@@ -13,7 +14,7 @@
           <nuxt />
         </v-container>
       </div>
-    </div>
+    </div-->
   </v-app>
 </template>
 <script>
@@ -26,26 +27,26 @@ export default {
   data() {
     return {
       isNaviOpen: false,
-      isMobile: false,
-    }
-  },
-  methods:{
-    handleResize: function() {
-      this.isMobile = window.innerWidth < 600;
-    },
-    showNavi: function(){
-      this.isNaviOpen = true;
-    },
-    hideNavi: function(){
-      this.isNaviOpen = false;
+      isMobile: false
     }
   },
   mounted() {
-    window.addEventListener('resize', this.handleResize);
-    this.handleResize();
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
   },
   destroyed() {
-    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.isMobile = window.innerWidth < 600
+    },
+    showNavi() {
+      this.isNaviOpen = true
+    },
+    hideNavi() {
+      this.isNaviOpen = false
+    }
   }
 }
 </script>
